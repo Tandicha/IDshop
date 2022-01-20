@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="gambar/logo.ico" type="image/x-icon">
+    <title>IDshop</title>
+    <style>
+        nav {
+            margin:auto; 
+            text-align: center;
+            width: 100%;
+            font-family: arial;
+        } 
+       
+        nav ul {
+            background:#ff6600;
+            padding: 0px;
+            list-style: none;
+            position: relative;
+            display: inline-table;
+            width: 100%;
+        }
+
+        nav ul la{
+            float:left;
+        }
+
+        nav ul lu{
+            float: left;
+            padding-top: 25px;
+            padding-left: 25px;
+        }
+
+        nav ul le{
+            float: left;
+            padding-top: 25px;
+        }
+   
+        nav ul li{
+            float:right;
+        }
+   
+        nav ul li:hover a{
+                color:rgb(0, 0, 0);
+        }
+   
+        nav ul li a{
+                display: block;
+                padding-right: 40px;
+                padding-top: 30px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+        }
+
+		.search {
+			padding:8px 15px;
+			background:rgba(255, 255, 255);
+			border:0px solid #dbdbdb;
+            width: 800px;
+		}
+
+		.button {
+			position:relative;
+			padding:6px 15px;
+			left:0px;
+			border:2px solid #ffffff;
+			background-color:#ff6600;
+			color:#fafafa;
+		}
+
+		.button:hover  {
+			color:#000000;
+		}
+
+        .container{
+            left: 50%;
+            top: 50%;
+            padding: 20px 20px;
+            width: 300px;
+            background-color: #ff66009f;
+            box-shadow: 0 0 10px rgba(255,255,255,.3);
+        }
+
+        kiri {
+            float: left;
+            padding: 50px;
+            padding-left: 150px;
+        }
+
+        kanan {
+            float: right;
+            padding: 50px;
+            padding-right: 150px;
+        }
+
+        hr {
+            clear: both;
+        }
+
+        footer {
+            clear: both;
+            background-color: #ff6600;
+        }
+        </style>
+   
+</head>
+
+<body style="margin: 0%; padding: 0%;">
+    <nav>
+        <ul style="margin: 0%; padding: 0%;">    
+            <la><a href="home.html"><img class="image" title="IDshop" src="gambar/home.ico" width="180px" float=left></a></la>
+            <li><a href="masuk.html">Masuk</a></li> 
+            <li><a href="daftar.html">Daftar</a></li> 
+            <lu><input class="search" type="text" placeholder="Cari..." required></lu>
+            <le><input class="button" type="button" value="Cari"></le>
+        </ul>
+    </nav>
+
+    <kiri>
+        <img src="gambar/logo.ico" width="400" height="400" />
+    </kiri>
+
+    <kanan>
+        <div class="container">
+        <form action="register.php" method="POST">
+            <fieldset style="width: fit-content;">
+                <p>
+                    <label for="idemail">Email:</label>
+                    <input id="idemail" type="email" name="email" placeholder="alamat email" />
+                </p>
+
+                <p>
+                    <label for="idpassword">Password:</label>
+                    <input id="idpassword" type="password" name="password" placeholder="password" />
+                </p>
+
+                <p>
+                    <label for="idnama">Nama:</label>
+                    <input id="idnama" type="text" name="Nama" placeholder="Nama lengkap..." />
+                </p>
+
+                <p>
+                    <label for="idalamat">Alamat:</label>
+                    <input id="idalamat" type="text" name="alamat" placeholder="alamat rumah" />
+                </p>
+
+                <p>
+                    <label for="idnotelepon">Nomor telepon:</label>
+                    <input id="idnotelepon" type="number" name="nomor telepon" placeholder="nomor telepon" />
+                </p>
+                
+                <p>
+                    <label for="idtanggallahir">Tanggal lahir:</label>
+                    <input id="idtanggallahir" type="date" name="tanggallahir" />
+                </p>
+
+                <p>
+                    <label>Jenis kelamin:</label>
+                    <input type="radio" name="jeniskelamin" value="pria"> Pria
+                    <input type="radio" name="jeniskelamin" value="wanita"> Wanita
+                </p>   
+
+                <p>
+                    <label for="idagree">Data diatas sudah benar?</label>
+                    <input type="checkbox" name="Sudah" value="ya" id="idagree">
+                </p>
+
+                <p>
+                    <input type="button" name="daftar" value="Daftar" />
+                </p>
+            </fieldset>
+        </form>
+        </div>
+    </kanan>
+        
+    <hr>
+    <footer style="text-align:center;">
+        <p style="margin: 0%;padding: 0%;">Copyright &copy; 2022 Tandicha Marchelputra Siswoko</p>
+    </footer>
+
+</body>
+</html>
